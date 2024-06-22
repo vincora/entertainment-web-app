@@ -1,0 +1,26 @@
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+  }
+  &__item {
+    &_active {
+      svg *[fill] {
+        fill: var(--light-color);
+      }
+    }
+  }
+
+  &__avatar {
+  }
+}
