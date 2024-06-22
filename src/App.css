@@ -3,3 +3,8 @@
   text-align: center;
   height: 100%;
 }
+
+.layout{
+  margin-left: calc(var(--width-navbar) + var(--padding-body));
+  padding-top: 32px;
+}

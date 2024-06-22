@@ -1,12 +1,12 @@
 .navbar {
   position: fixed;
-  left: 20px;
-  top: 20px;
-  bottom: 20px;
+  left: 36px;
+  top: 36px;
+  bottom: 36px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 96px;
+  width: var(--width-navbar);
   padding: 30px;
   background-color: var(--primary-color);
   border-radius: 20px;
@@ -18,10 +18,11 @@
   &__links {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     cursor: pointer;
   }
   &__item {
+    padding: 15px;
     &_active {
       svg *[fill] {
         fill: var(--light-color);
@@ -38,8 +39,11 @@
     margin-top: auto;
     width: 40px;
     height: 40px;
+    
     img {
       width: 100%;
+      border: 1px solid #ffffff;
+      border-radius: 50%;
     }
   }
 }
