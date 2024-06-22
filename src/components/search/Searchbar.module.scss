@@ -1,0 +1,38 @@
+.search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  gap: 24px;
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &__input {
+    width: 100%;
+    padding: 15px 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font: var(--font-heading-m);
+    color: #ffffff;
+
+    &::placeholder {
+      font: var(--font-heading-m);
+    }
+
+    &:focus{
+        border-bottom: var(--secondary-color) 1px solid;
+        caret-color: var(--accent-color);
+    }
+  }
+}
