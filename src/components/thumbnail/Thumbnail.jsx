@@ -1,14 +1,13 @@
 import React from "react";
 import styles from "./Thumbnail.module.scss";
-import IconPlay from "../../assets/icon-play.svg?react";
-import IconBookmark from "../../assets/icon-bookmark-empty.svg?react";
-import img from "../../assets/thumbnails/earths-untouched/regular/medium.jpg";
+import IconPlay from "../../../public/assets/icon-play.svg?react";
+import IconBookmark from "../../../public/assets/icon-bookmark-empty.svg?react";
 import cn from "clsx";
 
-const Thumbnail = ({ isBookmarked = false }) => {
+const Thumbnail = ({ isBookmarked = false, imgUrl }) => {
   return (
     <div className={styles.thumbnail}>
-      <img src={img} alt="" />
+      <img src={imgUrl} alt="" />
       <div className={styles.thumbnail__container}>
         <button className={styles.btnPlay}>
           <IconPlay />
