@@ -54,19 +54,19 @@
   align-items: center;
   background-color: #0000006a;
   cursor: pointer;
-  svg *{
+  svg * {
     fill: transparent;
     stroke: var(--color-light);
   }
-  &:hover{
+  &:hover {
     background-color: var(--color-light);
-    svg *{
-        stroke: #000000;
-      }
+    svg * {
+      stroke: #000000;
+    }
   }
-  &_selected{
-    svg *{
-        fill: var(--color-light);
-      }
+  &_selected {
+    svg * {
+      fill: var(--color-light);
+    }
   }
 }
