@@ -1,8 +1,7 @@
 .search {
   display: flex;
-  align-items: center;
+  align-items: start;
   width: 100%;
-  height: 50px;
   gap: 24px;
 
   &__icon {
@@ -19,11 +18,12 @@
   }
   &__input {
     width: 100%;
-    padding: 15px 0;
+    padding-bottom: 14px;
     background-color: transparent;
     border: none;
     outline: none;
     font: var(--font-heading-m);
+    line-height: 30px;
     color: #ffffff;
 
     &::placeholder {
@@ -31,8 +31,8 @@
     }
 
     &:focus{
-        border-bottom: var(--secondary-color) 1px solid;
-        caret-color: var(--accent-color);
+        border-bottom: var(--color-secondary) 1px solid;
+        caret-color: var(--color-accent);
     }
   }
 }
