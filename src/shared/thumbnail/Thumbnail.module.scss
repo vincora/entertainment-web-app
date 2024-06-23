@@ -1,0 +1,72 @@
+.thumbnail {
+  border-radius: 8px;
+  overflow: hidden;
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+
+  &__container {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(rgb(0, 0, 0), 0.5);
+    opacity: 0;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.btnPlay {
+  background-color: #9797978c;
+  border-radius: 28.5px;
+  padding: 9px;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 19px;
+  color: var(--color-light);
+  cursor: pointer;
+
+  &__text {
+    margin-right: 15px;
+    font-size: var(--font-heading-xs);
+    font-weight: var(--font-weight-heading-xs);
+  }
+}
+
+.bookmark {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  outline: none;
+  border: none;
+  width: 32px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0000006a;
+  cursor: pointer;
+  svg *{
+    fill: transparent;
+    stroke: var(--color-light);
+  }
+  &:hover{
+    background-color: var(--color-light);
+    svg *{
+        stroke: #000000;
+      }
+  }
+  &_selected{
+    svg *{
+        fill: var(--color-light);
+      }
+  }
+}

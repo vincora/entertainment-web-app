@@ -12,19 +12,22 @@
   --color-secondary: #5a698f;
   --color-light: #ffffff;
 
-  --bg-color: #10141e;
-  --accent-color: #fc4747;
-  --primary-color: #161d2f;
-  --secondary-color: #5a698f;
-  --light-color: #ffffff;
-
   /* typography */
-  --font-heading-l: 32px "Outfit" 300;
-  --font-heading-m: 24px "Outfit" 300;
-  --font-heading-s: 24px "Outfit" 500;
-  --font-heading-xs: 18px "Outfit" 500;
-  --font-body-m: 15px "Outfit" 300;
-  --font-body-s: 13px "Outfit" 300;
+
+  --font-heading-l: 32px;
+  --font-heading-m: 24px;
+  --font-heading-s: 24px;
+  --font-heading-xs: 18px;
+  --font-body-m: 15px;
+  --font-body-s: 13px;
+
+  --font-weight-heading-l: 300;
+  --font-weight-heading-m: 300;
+  --font-weight-heading-s: 500;
+  --font-weight-heading-xs: 500;
+  --font-weight-body-m: 300;
+  --font-weight-body-s: 300;
+
 
   /* width */
   --width-navbar: 96px;
@@ -40,8 +43,8 @@
 body {
   margin: 0;
   padding: var(--padding-body);
-  background-color: var(--bg-color);
-  color: var(--light-color);
+  background-color: var(--color-bg);
+  color: var(--color-light);
   width: 100%;
   height: 100vh;
 }

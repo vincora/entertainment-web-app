@@ -133,3 +133,7 @@ svg *[fill] {
 svg *[stroke] {
 	stroke: currentColor;
   }
+
+button{
+  padding: 0;
+}
