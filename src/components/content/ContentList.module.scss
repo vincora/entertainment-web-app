@@ -1,0 +1,12 @@
+.content {
+  &__title {
+    font-size: var(--font-heading-l);
+    font-weight: var(--font-weight-heading-l);
+    margin-bottom: 32px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 40px;
+  }
+}

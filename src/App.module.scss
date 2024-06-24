@@ -1,8 +1,9 @@
-.layout{
-  margin-left: calc(var(--width-navbar) + var(--padding-body));
-
-}
-.searchbar{
-  margin-top: 32px;
-  margin-bottom: 34px;
+.app{
+  &__layout{
+    margin-left: calc(var(--width-navbar) + var(--padding-body));
+  }
+  &__searchbar{
+    margin-top: 32px;
+    margin-bottom: 34px;
+  }
 }

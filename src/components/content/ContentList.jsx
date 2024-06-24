@@ -1,12 +1,12 @@
 import React from "react";
-import ContentItem from "../../components/contentItem/ContentItem";
-import data from "../../data.json";
-import styles from "./HomePage.module.scss";
+import styles from "./ContentList.module.scss";
+import ContentItem from "./ContentItem";
 
-const HomePage = () => {
+const ContentList = ({ data, title }) => {
   return (
-    <div>
-      <div className={styles.list}>
+    <div className={styles.content}>
+      <div className={styles.content__title}>{title}</div>
+      <ul className={styles.content__list}>
         {data.map(({ title, year, category, rating, thumbnail }) => {
           return (
             <ContentItem
@@ -19,9 +19,9 @@ const HomePage = () => {
             />
           );
         })}
-      </div>
+      </ul>
     </div>
   );
 };
 
-export default HomePage;
+export default ContentList;

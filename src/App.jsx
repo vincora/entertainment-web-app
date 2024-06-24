@@ -7,8 +7,8 @@ function App() {
   return (
     <div className={styles.app}>
       <Navbar />
-      <div className={styles.layout}>
-        <div className={styles.searchbar}>
+      <div className={styles.app__layout}>
+        <div className={styles.app__searchbar}>
           <Searchbar />
         </div>
         <Outlet />

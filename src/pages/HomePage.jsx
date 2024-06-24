@@ -2,8 +2,8 @@ import React from "react";
 import data from "../data.json";
 import ContentList from "../components/content/ContentList";
 
-const MoviesPage = () => {
-  return <ContentList data={data} title="Movies" />;
+const HomePage = () => {
+  return <ContentList data={data} title="Recommended for you" />;
 };
 
-export default MoviesPage;
+export default HomePage;
