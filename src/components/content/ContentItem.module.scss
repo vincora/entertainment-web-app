@@ -2,5 +2,20 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  height: 226px;
   width: 280px;
+  
+
+  &_big{
+    width: 470px;
+    height: 230px;
+    display: block;
+    position: relative;
+  }
+
+  &_big &__info{
+    position: absolute;
+      bottom: 24px;
+      left:24px;
+  }
 }

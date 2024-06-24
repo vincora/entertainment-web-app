@@ -1,9 +1,10 @@
 import React from "react";
 import data from "../data.json";
-import ContentList from "../components/content/ContentList";
+import ContentList from "../widgets/content-list/ContentList";
 
 const MoviesPage = () => {
-  return <ContentList data={data} title="Movies" />;
+  const filteredData = data.filter(item => item.category === 'Movie')
+  return <ContentList data={filteredData} title="Movies" />;
 };
 
 export default MoviesPage;

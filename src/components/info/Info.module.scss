@@ -1,5 +1,5 @@
 .info {
-
+  display: block;
 
   &__data {
     font-size: var(--font-body-s);
@@ -32,5 +32,15 @@
     white-space: nowrap;
     overflow: hidden; 
     text-overflow: ellipsis;
+  }
+
+  &_big &__data{
+    font-size: var(--font-body-m);
+    font-weight: var(--font-weight-body-m);
+  }
+
+  &_big &__title{
+    font-size: var(--font-heading-s);
+    font-weight: var(--font-weight-heading-s);
   }
 }

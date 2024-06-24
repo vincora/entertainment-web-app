@@ -2,15 +2,17 @@ import React from "react";
 import styles from "./ContentItem.module.scss";
 import Thumbnail from "../thumbnail/Thumbnail";
 import Info from "../info/Info";
+import cn from "clsx";
 
-const Item = ({ title, year, category, rating, imgUrl }) => {
-
+const ContentItem = ({ title, year, category, rating, imgUrl, isTrending }) => {
   return (
-    <li className={styles.item}>
-      <Thumbnail imgUrl={imgUrl}/>
-      <Info title={title} year={year} category={category} rating={rating} />
-    </li>
+    <div className={cn(styles.item, { [styles.item_big]: isTrending })}>
+      <Thumbnail className={styles.item__thumbnail} imgUrl={imgUrl} />
+      <div className={styles.item__info}>
+        <Info title={title} year={year} category={category} rating={rating} isTrending={isTrending} />
+      </div>
+    </div>
   );
 };
 
-export default Item;
+export default ContentItem;

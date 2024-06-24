@@ -1,10 +1,10 @@
 import React from "react";
-import Logo from "../../../public/assets/logo.svg?react";
-import BookmarkIcon from "../../../public/assets/icon-nav-bookmark.svg?react";
-import HomeIcon from "../../../public/assets/icon-nav-home.svg?react";
-import MoviesIcon from "../../../public/assets/icon-nav-movies.svg?react";
-import TvSeriesIcon from "../../../public/assets/icon-nav-tv-series.svg?react";
-import avatar from "../../../public/assets/image-avatar.png";
+import Logo from "../../assets/logo.svg?react";
+import BookmarkIcon from "../../assets/icon-nav-bookmark.svg?react";
+import HomeIcon from "../../assets/icon-nav-home.svg?react";
+import MoviesIcon from "../../assets/icon-nav-movies.svg?react";
+import TvSeriesIcon from "../../assets/icon-nav-tv-series.svg?react";
+import avatar from "../../assets/image-avatar.png";
 import styles from "./Navbar.module.scss";
 import { Link } from "react-router-dom";
 

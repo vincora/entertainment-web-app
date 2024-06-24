@@ -1,0 +1,17 @@
+.horizontal {
+  &__title {
+    font-size: var(--font-heading-l);
+    font-weight: var(--font-weight-heading-l);
+    margin-bottom: 25px;
+  }
+  &__list {
+    display: flex;
+    gap: 40px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+  }
+}

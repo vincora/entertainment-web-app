@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Thumbnail.module.scss";
-import IconPlay from "../../../public/assets/icon-play.svg?react";
-import IconBookmark from "../../../public/assets/icon-bookmark-empty.svg?react";
+import IconPlay from "../../assets/icon-play.svg?react";
+import IconBookmark from "../../assets/icon-bookmark-empty.svg?react";
 import cn from "clsx";
 
 const Thumbnail = ({ isBookmarked = false, imgUrl }) => {

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./BookmarkedPage.module.scss";
-import ContentList from "../components/content/ContentList";
+import ContentList from "../widgets/content-list/ContentList";
 import data from "../data.json";
 
 const BookmarkedPage = () => {
