@@ -9,9 +9,9 @@
     gap: 40px;
     flex-wrap: nowrap;
     overflow-x: auto;
-    scrollbar-width: none;
-    &::-webkit-scrollbar{
-        display: none;
-    }
+    // scrollbar-width: none;
+    // &::-webkit-scrollbar{
+    //     display: none;
+    // }
   }
 }

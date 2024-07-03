@@ -1,5 +1,3 @@
-.bookmarked{
-    & > div:not(:last-child){
-        margin-bottom: 32px;
-    }
+.bookmarked > div + div {
+  margin-top: 32px;
 }
