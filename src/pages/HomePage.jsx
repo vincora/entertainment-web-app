@@ -8,7 +8,7 @@ const HomePage = () => {
   const filteredData = data.filter((item) => item.isTrending === true);
   return (
     <div className={styles.home}>
-      <Horizontal data={filteredData} isTrending={true} />
+      <Horizontal data={filteredData} isTrending={true} title="Trending" />
       <ContentList data={data} title="Recommended for you" />;
     </div>
   );

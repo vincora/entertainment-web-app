@@ -9,9 +9,8 @@ const ContentList = ({ data, title }) => {
       <ul className={styles.content__list}>
         {data.map(({ title, year, category, rating, thumbnail }) => {
           return (
-            <li>
+            <li key={title}>
               <ContentItem
-                key={title}
                 title={title}
                 year={year}
                 category={category}
