@@ -29,9 +29,11 @@
   --font-weight-body-s: 300;
 
 
-  /* width */
+  /* width & heights */
   --width-navbar: 96px;
   --padding-body: 36px;
+
+  --height-navbar: 72px;
 }
 
 *,
@@ -43,6 +45,7 @@
 body {
   margin: 0;
   padding: var(--padding-body);
+  padding-right: 0;
   background-color: var(--color-bg);
   color: var(--color-light);
   width: 100%;

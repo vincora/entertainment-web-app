@@ -6,7 +6,10 @@ import Searchbar from "./widgets/search/Searchbar";
 function App() {
   return (
     <div className={styles.app}>
-      <Navbar />
+      <div className={styles.app__navbar}>
+        <Navbar />
+      </div>
+
       <div className={styles.app__layout}>
         <div className={styles.app__searchbar}>
           <Searchbar />

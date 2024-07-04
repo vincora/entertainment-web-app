@@ -1,4 +1,6 @@
 .content {
+  padding-right: var(--padding-body);
+
   &__title {
     font-size: var(--font-heading-l);
     font-weight: var(--font-weight-heading-l);
@@ -8,5 +10,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 32px 40px;
+  }
+
+  @media (min-width: 481px) and (max-width: 1024px) {
+    &__list{
+      justify-content: space-between;
+    }
   }
 }

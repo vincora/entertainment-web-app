@@ -1,9 +1,29 @@
-.app{
-  &__layout{
+.app {
+  &__navbar {
+    position: fixed;
+    left: 36px;
+    top: 36px;
+    bottom: 36px;
+    z-index: 20;
+  }
+  &__layout {
     margin-left: calc(var(--width-navbar) + var(--padding-body));
   }
-  &__searchbar{
+  &__searchbar {
     margin-top: 32px;
     margin-bottom: 34px;
+  }
+
+  @media (min-width: 481px) and (max-width: 1024px) {
+    &__navbar{
+      left: 24px;
+      top: 24px;
+      right: 24px;
+      height: fit-content;
+    }
+    &__layout{
+      margin-left: 0;
+      margin-top: calc(var(--height-navbar) + var(--padding-body));
+    }
   }
 }
